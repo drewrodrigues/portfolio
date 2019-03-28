@@ -1,0 +1,60 @@
+nav li {
+  display: inline-block;
+}
+
+.nav-container {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  background: rgba(0,0,0,0.25);
+}
+
+nav a {
+  color: $white;
+  display: inline-block;
+  padding: 10px;
+  font-size: 10px;
+  font-weight: 700;
+  transition: 0.25s all;
+
+  &:hover {
+    color: $grey-secondary;
+  }
+}
+
+a.active,
+a.active:hover {
+  cursor: default;
+  color: $red-primary;
+  border-bottom: 1px solid $red-primary;
+}
+
+.nav-left,
+.nav-right {
+  color: $grey-secondary;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 10px;
+
+  a {
+    border-bottom: 1px solid $red-primary;
+    background: red;
+  }
+}
+
+.nav-left {
+  float: left;
+}
+
+.nav-right {
+  float: right;
+}
+
+.nav-center {
+  color: $white;
+  font-weight: 700;
+  display: inline-block;
+  background: $black;
+  padding: 5px 10px;
+  font-size: 12px;
+}

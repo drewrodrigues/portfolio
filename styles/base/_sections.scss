@@ -1,0 +1,34 @@
+// section padding
+.jumbo-content,
+.about,
+.skills,
+.projects,
+.contact {
+  padding: 100px 0;
+}
+
+.grey {
+  background: $grey-primary;
+}
+
+.black {
+  background: $black;
+}
+
+.section-header {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.section-title {
+  font-weight: 700;
+  color: $white;
+  font-size: 32px;
+}
+
+.section-subtitle {
+  color: $grey-secondary;
+  font-size: 14px;
+  margin-top: -10px;
+  text-transform: uppercase;
+}

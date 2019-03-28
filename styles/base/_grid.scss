@@ -1,0 +1,26 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.grid::after,
+.clear::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.grid-1-3 {
+  float: left;
+  width: 32.6666%;
+}
+
+.grid-1-3:nth-of-type(3n+2) {
+  margin: 0 1%;
+}
+
+.grid-1-8 {
+  float: left;
+  width: 12.5%;
+}
