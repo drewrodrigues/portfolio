@@ -1,6 +1,13 @@
+@keyframes pointdown {
+  from { }
+  to { transform: translateY(10px)}
+}
+
+.about {
+  padding-top: 100px;
+}
+
 // section padding
-.jumbo-content,
-.about,
 .skills,
 .projects,
 .contact {
@@ -16,7 +23,7 @@
 }
 
 .section-header {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   text-align: center;
 }
 
@@ -31,4 +38,25 @@
   font-size: 14px;
   margin-top: -10px;
   text-transform: uppercase;
+}
+
+.section-learnmore {
+  text-align: center;
+  color: $white;
+  display: block;
+  font-size: 10px;
+  padding-bottom: 70px;
+  padding-top: 50px;
+  transition: color 0.5s;
+
+  i {
+    padding-top: 20px;
+    display: block;
+    font-size: 14px;
+    animation: pointdown 0.5s infinite alternate;
+  }
+
+  &:hover {
+    color: $red-primary;
+  }
 }

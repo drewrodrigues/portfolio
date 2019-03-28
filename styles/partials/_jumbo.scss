@@ -4,7 +4,6 @@
 }
 
 .jumbo {
-  height: 100vh;
   background: url("../../images/jumbo.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -12,7 +11,7 @@
 
 .jumbo-content {
   text-align: center;
-  padding-top: 200px;
+  padding-top: 15vh;
 }
 
 .jumbo-content-prename {

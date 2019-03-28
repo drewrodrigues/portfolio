@@ -104,8 +104,12 @@ body {
 a {
   text-decoration: none; }
 
-.jumbo-content,
-.about,
+@keyframes pointdown {
+  to {
+    transform: translateY(10px); } }
+.about {
+  padding-top: 100px; }
+
 .skills,
 .projects,
 .contact {
@@ -118,7 +122,7 @@ a {
   background: #000; }
 
 .section-header {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   text-align: center; }
 
 .section-title {
@@ -131,6 +135,22 @@ a {
   font-size: 14px;
   margin-top: -10px;
   text-transform: uppercase; }
+
+.section-learnmore {
+  text-align: center;
+  color: #fff;
+  display: block;
+  font-size: 10px;
+  padding-bottom: 70px;
+  padding-top: 50px;
+  transition: color 0.5s; }
+  .section-learnmore i {
+    padding-top: 20px;
+    display: block;
+    font-size: 14px;
+    animation: pointdown 0.5s infinite alternate; }
+  .section-learnmore:hover {
+    color: #E74C3C; }
 
 @keyframes glow-red {
   from {
@@ -235,14 +255,13 @@ nav a {
   to {
     text-shadow: 0 0 20px #E74C3C; } }
 .jumbo {
-  height: 100vh;
   background: url("../../images/jumbo.jpg");
   background-size: cover;
   background-attachment: fixed; }
 
 .jumbo-content {
   text-align: center;
-  padding-top: 200px; }
+  padding-top: 15vh; }
 
 .jumbo-content-prename {
   position: absolute;
@@ -324,12 +343,9 @@ nav a {
   padding-bottom: 0; }
 
 .skill {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   text-align: center;
   font-size: 12px; }
-
-.skill-top {
-  margin-bottom: 50px; }
 
 .skill-title {
   color: #fff;
@@ -373,9 +389,6 @@ nav a {
 
 .card.project {
   margin-bottom: 50px; }
-
-.card.project:last-of-type {
-  margin-bottom: 100px; }
 
 .project-codebase {
   display: block;
