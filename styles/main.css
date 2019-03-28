@@ -183,6 +183,7 @@ nav li {
 .nav-container {
   text-align: center;
   position: fixed;
+  z-index: 100;
   width: 100%;
   background: rgba(0, 0, 0, 0.25); }
 
@@ -201,7 +202,7 @@ nav a {
 .nav-right {
   color: #777;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 10px;
   padding: 10px; }
   .nav-left a,
   .nav-right a {
@@ -222,6 +223,12 @@ nav a {
   padding: 5px 10px;
   font-size: 12px; }
 
+@media all and (max-width: 700px) {
+  .nav-left,
+  .nav-right {
+    float: none;
+    display: none;
+    padding: 0; } }
 @keyframes glow-red-text {
   from {
     text-shadow: 0 0 10px #E74C3C; }
@@ -277,11 +284,17 @@ nav a {
     font-size: 22px; } }
 @media all and (max-width: 600px) {
   .jumbo-content-name {
-    font-size: 125px; }
+    font-size: 100px; }
+
+  .jumbo-content-prename {
+    top: 15px; }
+
+  .jumbo-content-aftername {
+    bottom: 15px; }
 
   .jumbo-content-prename,
   .jumbo-content-aftername {
-    font-size: 16px; } }
+    font-size: 14px; } }
 .about {
   text-align: center; }
 

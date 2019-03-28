@@ -5,6 +5,7 @@ nav li {
 .nav-container {
   text-align: center;
   position: fixed;
+  z-index: 100;
   width: 100%;
   background: rgba(0,0,0,0.25);
 }
@@ -27,7 +28,7 @@ nav a {
 .nav-right {
   color: $grey-secondary;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 10px;
   padding: 10px;
 
   a {
@@ -51,4 +52,13 @@ nav a {
   background: $black;
   padding: 5px 10px;
   font-size: 12px;
+}
+
+@media all and (max-width: 700px) {
+  .nav-left,
+  .nav-right {
+    float: none;
+    display: none;
+    padding: 0;
+  }
 }
