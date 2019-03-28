@@ -3,23 +3,19 @@
   to { transform: translateY(10px)}
 }
 
-.about {
+.about,
+.skills,
+.projects {
   padding-top: 100px;
 }
 
 // section padding
-.skills,
-.projects,
 .contact {
   padding: 100px 0;
 }
 
 .grey {
-  background: $grey-primary;
-}
-
-.black {
-  background: $black;
+  background: $grey-background;
 }
 
 .section-header {
@@ -29,7 +25,7 @@
 
 .section-title {
   font-weight: 700;
-  color: $white;
+  color: $grey-primary;
   font-size: 32px;
 }
 
@@ -37,12 +33,11 @@
   color: $grey-secondary;
   font-size: 14px;
   margin-top: -10px;
-  text-transform: uppercase;
 }
 
 .section-learnmore {
   text-align: center;
-  color: $white;
+  color: $grey-secondary;
   display: block;
   font-size: 10px;
   padding-bottom: 70px;
@@ -59,4 +54,8 @@
   &:hover {
     color: $red-primary;
   }
+}
+
+.grey .section-learnmore {
+
 }

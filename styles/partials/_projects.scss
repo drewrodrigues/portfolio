@@ -8,12 +8,13 @@
 
 .project-codebase {
   display: block;
-  color: $grey-primary;
+  color: $grey-secondary;
   margin-top: 20px;
   font-size: 12px;
+  transition: color 0.5s;
 
   &:hover {
-    color: $grey-secondary;
+    color: $red-primary;
   }
 }
 
