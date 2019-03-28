@@ -9,6 +9,7 @@
 }
 
 .contact-icon i {
+  animation: fade-in-out 0.5s infinite alternate;
   color: $white;
   font-size: 50px;
   margin-bottom: 20px;

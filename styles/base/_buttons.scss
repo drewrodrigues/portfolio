@@ -3,11 +3,6 @@
   to { box-shadow: 0 0 10px 3px $red-primary; }
 }
 
-@keyframes glow-grey {
-  from { box-shadow: 0 0 10px 0 $grey-primary; }
-  to { box-shadow: 0 0 10px 3px $grey-secondary; }
-}
-
 .button {
   background: $red-primary;
   padding: 10px 20px;
@@ -24,13 +19,4 @@
 
 .button:hover {
   background: #c0392b;
-}
-
-.button-grey {
-  animation: 1s glow-grey infinite alternate;
-  background: $grey-secondary;
-
-  &:hover {
-    background: #555;
-  }
 }

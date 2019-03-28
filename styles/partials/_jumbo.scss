@@ -1,3 +1,8 @@
+@keyframes glow-red-text {
+  from { text-shadow: 0 0 10px $red-primary; }
+  to { text-shadow: 0 0 20px $red-primary; }
+}
+
 .jumbo {
   height: 100vh;
   background: url("../../images/jumbo.jpg");
@@ -39,5 +44,6 @@
   span {
     color: $red-primary;
     font-weight: 700;
+    animation: 1s glow-red-text infinite alternate;
   }
 }

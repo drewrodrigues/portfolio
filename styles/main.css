@@ -115,11 +115,6 @@ a {
     box-shadow: 0 0 10px 0 #E74C3C; }
   to {
     box-shadow: 0 0 10px 3px #E74C3C; } }
-@keyframes glow-grey {
-  from {
-    box-shadow: 0 0 10px 0 #222; }
-  to {
-    box-shadow: 0 0 10px 3px #777; } }
 .button {
   background: #E74C3C;
   padding: 10px 20px;
@@ -135,12 +130,6 @@ a {
 
 .button:hover {
   background: #c0392b; }
-
-.button-grey {
-  animation: 1s glow-grey infinite alternate;
-  background: #777; }
-  .button-grey:hover {
-    background: #555; }
 
 .card {
   text-align: center; }
@@ -211,6 +200,11 @@ nav a {
   padding: 5px 10px;
   font-size: 12px; }
 
+@keyframes glow-red-text {
+  from {
+    text-shadow: 0 0 10px #E74C3C; }
+  to {
+    text-shadow: 0 0 20px #E74C3C; } }
 .jumbo {
   height: 100vh;
   background: url("../../images/jumbo.jpg");
@@ -246,7 +240,8 @@ nav a {
   font-weight: 400; }
   .jumbo-content-aftername span {
     color: #E74C3C;
-    font-weight: 700; }
+    font-weight: 700;
+    animation: 1s glow-red-text infinite alternate; }
 
 .about {
   text-align: center; }
@@ -268,6 +263,11 @@ nav a {
   max-width: 400px;
   margin: 0 auto; }
 
+@keyframes fade-in-out {
+  0% {
+    transform: none; }
+  100% {
+    transform: scale(1.1); } }
 .skills {
   padding-bottom: 0; }
 
@@ -283,7 +283,8 @@ nav a {
 .skill-icon {
   width: 50px;
   display: inline-block;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  animation: fade-in-out 0.5s infinite alternate; }
 
 .contact {
   border-bottom: 10px solid #E74C3C; }
@@ -294,6 +295,7 @@ nav a {
   text-align: center; }
 
 .contact-icon i {
+  animation: fade-in-out 0.5s infinite alternate;
   color: #fff;
   font-size: 50px;
   margin-bottom: 20px;
