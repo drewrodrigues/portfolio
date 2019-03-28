@@ -11,6 +11,11 @@
   clear: both;
 }
 
+.grid-1-3,
+.grid-1-8 {
+  transition: width 0.5s;
+}
+
 .grid-1-3 {
   float: left;
   width: 32.6666%;
@@ -28,5 +33,27 @@
 @media all and (max-width: 800px) {
   .grid-1-8 {
     width: 25%;
+  }
+
+  .grid-1-3:nth-of-type(3n+2) {
+    margin: 0;
+  }
+
+  .grid-1-3 {
+    width: 49%;
+  }
+
+  .grid-1-3:nth-of-type(2n+2) {
+    margin-left: 2%;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .grid-1-3:nth-of-type(2n+2) {
+    margin: 0;
+  }
+
+  .grid-1-3 {
+    width: 100%;
   }
 }

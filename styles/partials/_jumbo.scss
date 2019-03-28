@@ -22,6 +22,7 @@
   font-size: 28px;
   color: $grey-secondary;
   font-weight: 400;
+  transition: font-size 0.5s;
 }
 
 .jumbo-content-name {
@@ -31,6 +32,7 @@
   color: $white;
   display: inline-block;
   margin-bottom: 50px;
+  transition: font-size 0.5s;
 }
 
 .jumbo-content-aftername {
@@ -40,11 +42,12 @@
   font-size: 28px;
   color: $grey-secondary;
   font-weight: 400;
+  transition: font-size 0.5s;
 
   span {
     color: $red-primary;
     font-weight: 700;
-    animation: 1s glow-red-text infinite alternate;
+    animation: 0.5s glow-red-text infinite alternate;
   }
 }
 

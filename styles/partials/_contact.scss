@@ -26,3 +26,10 @@
 .contact-icon:hover i {
   color: $red-primary;
 }
+
+@media all and (max-width: 600px) {
+
+  .contact i {
+    font-size: 36px;
+  }
+}

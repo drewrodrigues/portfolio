@@ -1,3 +1,15 @@
+.projects {
+  padding-bottom: 0;
+}
+
+.card.project {
+  margin-bottom: 50px;
+}
+
+.card.project:last-of-type {
+  margin-bottom: 100px;
+}
+
 .project-codebase {
   display: block;
   color: $grey-primary;

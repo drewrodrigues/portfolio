@@ -60,6 +60,10 @@ table {
   display: table;
   clear: both; }
 
+.grid-1-3,
+.grid-1-8 {
+  transition: width 0.5s; }
+
 .grid-1-3 {
   float: left;
   width: 32.6666%; }
@@ -73,7 +77,22 @@ table {
 
 @media all and (max-width: 800px) {
   .grid-1-8 {
-    width: 25%; } }
+    width: 25%; }
+
+  .grid-1-3:nth-of-type(3n+2) {
+    margin: 0; }
+
+  .grid-1-3 {
+    width: 49%; }
+
+  .grid-1-3:nth-of-type(2n+2) {
+    margin-left: 2%; } }
+@media all and (max-width: 500px) {
+  .grid-1-3:nth-of-type(2n+2) {
+    margin: 0; }
+
+  .grid-1-3 {
+    width: 100%; } }
 body {
   font-family: sans-serif;
   line-height: 1.6; }
@@ -128,7 +147,7 @@ a {
   box-shadow: 0 0 10px 0 #E74C3C;
   transition: background 0.5s;
   cursor: pointer;
-  animation: 1s glow-red infinite alternate;
+  animation: 0.5s glow-red infinite alternate;
   font-size: 12px; }
 
 .button:hover {
@@ -224,7 +243,8 @@ nav a {
   left: 8px;
   font-size: 28px;
   color: #777;
-  font-weight: 400; }
+  font-weight: 400;
+  transition: font-size 0.5s; }
 
 .jumbo-content-name {
   position: relative;
@@ -232,7 +252,8 @@ nav a {
   font-weight: 700;
   color: #fff;
   display: inline-block;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  transition: font-size 0.5s; }
 
 .jumbo-content-aftername {
   position: absolute;
@@ -240,11 +261,12 @@ nav a {
   right: 8px;
   font-size: 28px;
   color: #777;
-  font-weight: 400; }
+  font-weight: 400;
+  transition: font-size 0.5s; }
   .jumbo-content-aftername span {
     color: #E74C3C;
     font-weight: 700;
-    animation: 1s glow-red-text infinite alternate; }
+    animation: 0.5s glow-red-text infinite alternate; }
 
 @media all and (max-width: 800px) {
   .jumbo-content-name {
@@ -329,6 +351,18 @@ nav a {
 .contact-icon:hover h6,
 .contact-icon:hover i {
   color: #E74C3C; }
+
+@media all and (max-width: 600px) {
+  .contact i {
+    font-size: 36px; } }
+.projects {
+  padding-bottom: 0; }
+
+.card.project {
+  margin-bottom: 50px; }
+
+.card.project:last-of-type {
+  margin-bottom: 100px; }
 
 .project-codebase {
   display: block;
