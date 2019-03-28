@@ -143,34 +143,28 @@ a {
     background: #555; }
 
 .card {
-  background: #fff;
   text-align: center; }
 
 .card-header {
   position: relative; }
 
 .card-content {
-  padding: 20px; }
+  padding: 20px;
+  margin-bottom: 20px; }
 
 .card-image {
-  width: 100%; }
+  width: 100%;
+  border-radius: 3px; }
 
 .card-title {
   font-weight: 700;
   margin-bottom: 10px;
-  font-size: 22px; }
+  font-size: 22px;
+  color: #fff; }
 
 .card-body {
-  color: #222;
-  font-size: 14px;
-  padding-bottom: 10px; }
-
-.card-button {
-  width: 50%;
-  float: left;
-  border-radius: 0;
-  animation: none;
-  box-shadow: none; }
+  color: #777;
+  font-size: 14px; }
 
 nav li {
   display: inline-block; }
@@ -189,13 +183,8 @@ nav a {
   font-weight: 700;
   transition: 0.25s all; }
   nav a:hover {
-    color: #777; }
-
-a.active,
-a.active:hover {
-  cursor: default;
-  color: #E74C3C;
-  border-bottom: 1px solid #E74C3C; }
+    color: #E74C3C;
+    border-bottom: 1px solid #E74C3C; }
 
 .nav-left,
 .nav-right {
@@ -319,17 +308,24 @@ a.active:hover {
 .contact-icon:hover i {
   color: #E74C3C; }
 
+.project-codebase {
+  display: block;
+  color: #222;
+  margin-top: 20px;
+  font-size: 12px; }
+  .project-codebase:hover {
+    color: #777; }
+
 .project-technologies {
-  position: absolute;
-  left: 20px;
-  bottom: 20px; }
+  margin-bottom: 20px; }
 
 .project-technology {
   display: inline-block;
   font-size: 10px;
   padding: 3px 6px;
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 3px; }
+  border-radius: 3px;
+  border: 1px solid #E74C3C;
+  color: #E74C3C; }
 
 body {
   background: #222; }

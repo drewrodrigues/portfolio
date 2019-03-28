@@ -15,10 +15,10 @@
       <h1 class="nav-right">FULL STACK WEB DEVELOPER</h1>
       <div class="container">
         <ul>
-          <li><a href="#" class="active">ABOUT</a></li>
-          <li><a href="#">SKILLS</a></li>
-          <li><a href="#">PROJECTS</a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li><a href="#about" class="active">ABOUT</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
     </div>
@@ -35,7 +35,7 @@
     </div>
   </header><!-- .jumbo -->
 
-  <section class="about black">
+  <section class="about black" id="about">
     <div class="container">
       <img src="images/me.jpeg" alt="Picture of me" class="about-image"/>
       <h3 class="about-title">ABOUT ME</h3>
@@ -43,7 +43,7 @@
     </div>
   </section><!-- .about -->
 
-  <section class="skills grey">
+  <section class="skills grey" id="skills">
     <div class="container">
       <header class="section-header">
         <h4 class="section-title">SKILLS</h4>
@@ -87,7 +87,7 @@
     </div><!-- .container -->
   </section><!-- .skills -->
 
-  <section class="projects black">
+  <section class="projects black" id="projects">
     <div class="container">
       <header class="section-header">
         <h4 class="section-title">PROJECTS</h4>
@@ -97,59 +97,57 @@
       <div class="grid">
         <div class="grid-1-3 card">
           <header class="card-header">
-            <img src="images/placeholder.png" alt="Agile Tracker Screenshot" class="card-image"/>
             <ul class="project-technologies">
               <li class="project-technology">RAILS</li>
               <li class="project-technology">REACT</li>
               <li class="project-technology">REDUX</li>
             </ul>
+            <img src="images/engineer_living.gif" alt="Agile Tracker Screenshot" class="card-image"/>
           </header>
           <div class="card-content">
             <h6 class="card-title">AGILE TRACKER</h6>
             <p class="card-body">Project management tool, inspired by Pivotal Tracker. It uses Rails and Postgres on the backend and React and Redux on the frontend.</p>
           </div>
-          <a class="button card-button">Check it out</a>
-          <a href="#" class="button button-grey card-button">Codebase</a>
+          <a class="button">Check it out</a>
+          <a href="#" class="project-codebase">Codebase</a>
         </div>
         <div class="grid-1-3 card">
           <header class="card-header">
-            <img src="images/placeholder.png" alt="Agile Tracker Screenshot" class="card-image"/>
             <ul class="project-technologies">
               <li class="project-technology">RAILS</li>
               <li class="project-technology">REACT</li>
               <li class="project-technology">REDUX</li>
             </ul>
+            <img src="images/agile_tracker.gif" alt="Agile Tracker Screenshot" class="card-image"/>
           </header>
           <div class="card-content">
             <h6 class="card-title">ENGINEER LIVING</h6>
-            <p class="card-body">Best places to live for software engineers.
-
-                See project Engineer Living</p>
+            <p class="card-body">Project management tool, inspired by Pivotal Tracker. It uses Rails and Postgres on the backend and React and Redux on the frontend.</p>
           </div>
-          <a class="button card-button">Check it out</a>
-          <a href="#" class="button button-grey card-button">Codebase</a>
+          <a class="button">Check it out</a>
+          <a href="#" class="project-codebase">Codebase</a>
         </div>
         <div class="grid-1-3 card">
           <header class="card-header">
-            <img src="images/placeholder.png" alt="Agile Tracker Screenshot" class="card-image"/>
             <ul class="project-technologies">
               <li class="project-technology">RAILS</li>
               <li class="project-technology">REACT</li>
               <li class="project-technology">REDUX</li>
             </ul>
+            <img src="images/engineer_living.gif" alt="Agile Tracker Screenshot" class="card-image"/>
           </header>
           <div class="card-content">
             <h6 class="card-title">VAPOR</h6>
-            <p class="card-body">Game and user profile analysis.</p>
+            <p class="card-body">Project management tool, inspired by Pivotal Tracker. It uses Rails and Postgres on the backend and React and Redux on the frontend.</p>
           </div>
-          <a class="button card-button">Check it out</a>
-          <a href="#" class="button button-grey card-button">Codebase</a>
+          <a class="button">Check it out</a>
+          <a href="#" class="project-codebase">Codebase</a>
         </div>
       </div><!-- .grid -->
     </div><!-- .container-->
   </section><!-- .projects -->
 
-  <footer class="contact grey">
+  <footer class="contact grey" id="contact">
     <div class="container clear">
       <header class="section-header">
         <h4 class="section-title">CONTACT ME</h4>
@@ -157,19 +155,19 @@
       </header>
 
       <div class="contact-icons">
-        <a href="#" class="contact-icon">
+        <a href="https://github.com/thesimpledev" class="contact-icon" target="_blank">
           <i class="fab fa-github"></i>
           <h6>GITHUB</h6>
         </a>
-        <a href="#" class="contact-icon">
+        <a href="https://www.linkedin.com/in/thesimpledev/" class="contact-icon" target="_blank">
           <i class="fab fa-linkedin"></i>
           <h6>LINKED IN</h6>
         </a>
-        <a href="#" class="contact-icon">
+        <a href="mailto:thesimpledev@gmail.com" class="contact-icon">
           <i class="fas fa-envelope-open-text"></i>
           <h6>EMAIL</h6>
         </a>
-        <a href="#" class="contact-icon">
+        <a href="https://thesimple.dev" class="contact-icon" target="_blank">
           <i class="fas fa-comment"></i>
           <h6>BLOG</h6>
         </a>

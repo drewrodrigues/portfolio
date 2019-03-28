@@ -1,5 +1,4 @@
 .card {
-  background: $white;
   text-align: center;
 }
 
@@ -9,28 +8,22 @@
 
 .card-content {
   padding: 20px;
+  margin-bottom: 20px;
 }
 
 .card-image {
   width: 100%;
+  border-radius: 3px;
 }
 
 .card-title {
   font-weight: 700;
   margin-bottom: 10px;
   font-size: 22px;
+  color: $white;
 }
 
 .card-body {
-  color: $grey-primary; 
+  color: $grey-secondary; 
   font-size: 14px;
-  padding-bottom: 10px;
-}
-
-.card-button {
-  width: 50%;
-  float: left;
-  border-radius: 0;
-  animation: none;
-  box-shadow: none;
 }

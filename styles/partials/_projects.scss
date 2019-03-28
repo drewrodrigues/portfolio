@@ -1,13 +1,23 @@
+.project-codebase {
+  display: block;
+  color: $grey-primary;
+  margin-top: 20px;
+  font-size: 12px;
+
+  &:hover {
+    color: $grey-secondary;
+  }
+}
+
 .project-technologies {
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .project-technology {
   display: inline-block;
   font-size: 10px;
   padding: 3px 6px;
-  background: rgba(255, 255, 255, 0.5);
   border-radius: 3px;
+  border: 1px solid $red-primary;
+  color: $red-primary;
 }

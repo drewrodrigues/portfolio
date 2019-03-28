@@ -18,15 +18,9 @@ nav a {
   transition: 0.25s all;
 
   &:hover {
-    color: $grey-secondary;
+    color: $red-primary;
+    border-bottom: 1px solid $red-primary;
   }
-}
-
-a.active,
-a.active:hover {
-  cursor: default;
-  color: $red-primary;
-  border-bottom: 1px solid $red-primary;
 }
 
 .nav-left,
