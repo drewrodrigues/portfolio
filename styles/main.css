@@ -128,7 +128,7 @@ a {
   color: #fff;
   font-weight: 700;
   box-shadow: 0 0 10px 0 #E74C3C;
-  transition: all 0.5s;
+  transition: background 0.5s;
   cursor: pointer;
   animation: 1s glow-red infinite alternate;
   font-size: 12px; }
@@ -213,7 +213,7 @@ nav a {
 
 .jumbo {
   height: 100vh;
-  background: url("../../images/jumbo.jpeg");
+  background: url("../../images/jumbo.jpg");
   background-size: cover;
   background-attachment: fixed; }
 
