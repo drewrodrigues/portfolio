@@ -71,6 +71,9 @@ table {
   float: left;
   width: 12.5%; }
 
+@media all and (max-width: 800px) {
+  .grid-1-8 {
+    width: 25%; } }
 body {
   font-family: sans-serif;
   line-height: 1.6; }
@@ -289,6 +292,9 @@ nav a {
   margin-bottom: 100px;
   text-align: center;
   font-size: 12px; }
+
+.skill-top {
+  margin-bottom: 50px; }
 
 .skill-title {
   color: #fff;
