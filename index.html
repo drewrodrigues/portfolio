@@ -8,18 +8,20 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/main.css" type="text/css">
   <link rel="shortcut icon" href="images/me.jpeg" />
+  <script src="scripts/main.js" type="text/javascript"></script>
 </head>
 <body>
+  <div id="fadeIn"></div>
   <header class="jumbo">
     <nav class="nav-container">
       <h1 class="nav-left">Drew Rodrigues</h1>
       <h1 class="nav-right">Full Stack Web Developer</h1>
       <div class="container">
         <ul>
-          <li><a href="#about" class="active">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about" class="slideable">About</a></li>
+          <li><a href="#skills" class="slideable">Skills</a></li>
+          <li><a href="#projects" class="slideable">Projects</a></li>
+          <li><a href="#contact" class="slideable">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -31,9 +33,9 @@
           Drew
           <span class="jumbo-content-aftername">an <span>awesome</span> full stack web developer</span>
         </h1><br>
-        <a href="#about" class="button">Find out why</a>
+        <a href="#about" class="button slideable">Find out why</a>
       </section>
-      <a href="#about" class="section-learnmore">
+      <a href="#about" class="section-learnmore slideable">
         Learn about me
         <i class="fas fa-angle-double-down"></i>
       </a>
@@ -45,7 +47,7 @@
       <img src="images/me.jpeg" alt="Picture of me" class="about-image"/>
       <h3 class="about-title">About me</h3>
       <p class="about-description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable look even slightly believable.</p>
-      <a href="#skills" class="section-learnmore">
+      <a href="#skills" class="section-learnmore slideable">
         See these skills
         <i class="fas fa-angle-double-down"></i>
       </a>
@@ -55,7 +57,7 @@
   <section class="skills grey" id="skills">
     <div class="container">
       <header class="section-header">
-        <h4 class="section-title">SKILLS</h4>
+        <h4 class="section-title">Skills</h4>
         <h5 class="section-subtitle">few of the many</h5>
       </header>
 
@@ -93,7 +95,7 @@
           <h4 class="skill-title">Webpack</h4>
         </div>
       </div><!-- .grid -->
-      <a href="#projects" class="section-learnmore">
+      <a href="#projects" class="section-learnmore slideable">
         Checkout my projects
         <i class="fas fa-angle-double-down"></i>
       </a>
@@ -157,7 +159,7 @@
           <a href="#" class="project-codebase">Codebase</a>
         </div>
       </div><!-- .grid -->
-      <a href="#contact" class="section-learnmore">
+      <a href="#contact" class="section-learnmore slideable">
         Work with me
         <i class="fas fa-angle-double-down"></i>
       </a>
