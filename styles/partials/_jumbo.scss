@@ -56,7 +56,16 @@
 
   .jumbo-content-prename,
   .jumbo-content-aftername {
-    font-size: 22px;
+    font-size: 14px;
+  }
+
+  .jumbo-content-prename {
+    top: 40px;
+    left: 10px;
+  }
+
+  .jumbo-content-aftername {
+    bottom: 40px;
   }
 }
 
@@ -71,10 +80,6 @@
 
   .jumbo-content-aftername {
     bottom: 15px;
-  }
-
-  .jumbo-content-prename,
-  .jumbo-content-aftername {
-    font-size: 14px;
+    right: 0;
   }
 }
