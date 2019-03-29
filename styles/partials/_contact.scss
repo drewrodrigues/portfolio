@@ -11,7 +11,7 @@
 .contact-icon i {
   animation: fade-in-out 0.5s infinite alternate;
   color: $grey-primary;
-  font-size: 50px;
+  font-size: 36px;
   margin-bottom: 20px;
   transition: all 0.25s;
 }
@@ -25,11 +25,4 @@
 .contact-icon:hover h6,
 .contact-icon:hover i {
   color: $red-primary;
-}
-
-@media all and (max-width: 600px) {
-
-  .contact i {
-    font-size: 36px;
-  }
 }

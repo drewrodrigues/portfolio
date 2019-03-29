@@ -308,7 +308,8 @@ nav a {
     font-size: 100px; }
 
   .jumbo-content-prename {
-    top: 15px; }
+    top: 15px;
+    left: 6px; }
 
   .jumbo-content-aftername {
     bottom: 15px;
@@ -367,7 +368,7 @@ nav a {
 .contact-icon i {
   animation: fade-in-out 0.5s infinite alternate;
   color: #3d3d44;
-  font-size: 50px;
+  font-size: 36px;
   margin-bottom: 20px;
   transition: all 0.25s; }
 
@@ -380,9 +381,6 @@ nav a {
 .contact-icon:hover i {
   color: #e03c31; }
 
-@media all and (max-width: 600px) {
-  .contact i {
-    font-size: 36px; } }
 .projects {
   padding-bottom: 0; }
 
