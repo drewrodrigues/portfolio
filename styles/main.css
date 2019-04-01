@@ -331,6 +331,12 @@ nav a {
   .jumbo-content-aftername {
     bottom: 15px;
     right: 0; } }
+.about {
+  background-image: url("../images/me.png");
+  background-repeat: no-repeat;
+  background-position: 0% bottom;
+  background-size: 25%; }
+
 .about-image {
   border-radius: 50%;
   width: 100px;
