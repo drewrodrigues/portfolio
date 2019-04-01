@@ -55,3 +55,17 @@
   border: 1px solid $red-primary;
   color: $red-primary;
 }
+
+@media all and (max-width: 800px) {
+  .project-image,
+  .project-image.in-progress {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .project {
+    text-align: center;
+  }
+}

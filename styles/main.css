@@ -461,3 +461,14 @@ nav a {
   border-radius: 3px;
   border: 1px solid #e03c31;
   color: #e03c31; }
+
+@media all and (max-width: 800px) {
+  .project-image,
+  .project-image.in-progress {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px; }
+
+  .project {
+    text-align: center; } }
