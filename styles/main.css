@@ -65,7 +65,7 @@ table {
   width: 48%;
   margin-right: 4%; }
 
-.grid-1-2:last-of-type {
+.grid-1-2:nth-of-type(2n) {
   margin-right: 0; }
 
 .grid-1-3 {
@@ -169,7 +169,7 @@ a {
   border: 0;
   color: #fff;
   font-weight: 700;
-  box-shadow: 0 0 10px 0 #e03c31;
+  box-shadow: 0 0 10px #e03c31;
   transition: background 0.5s;
   cursor: pointer;
   animation: 0.5s glow-red infinite alternate;
@@ -177,6 +177,14 @@ a {
 
 .button:hover {
   background: #c0392b; }
+
+.button-disabled {
+  background: #aaa;
+  animation: none;
+  box-shadow: none;
+  cursor: default; }
+  .button-disabled:hover {
+    background: #aaa; }
 
 .card {
   text-align: center; }
@@ -410,13 +418,35 @@ nav a {
 .projects {
   padding-bottom: 0; }
 
+.project {
+  margin-bottom: 100px; }
+
+.project-image {
+  float: left;
+  width: 50%;
+  margin-right: 50px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.15); }
+
+.project-description {
+  margin-bottom: 25px; }
+
+.project-image.in-progress {
+  width: 50%;
+  height: 240px;
+  background: #ccc;
+  text-align: center;
+  padding-top: 90px;
+  font-size: 32px;
+  color: #fff; }
+
 .card.project {
   margin-bottom: 50px; }
 
 .project-codebase {
-  display: block;
   color: #aaa;
-  margin-top: 20px;
+  display: inline-block;
+  margin-left: 10px;
   font-size: 12px;
   transition: color 0.5s; }
   .project-codebase:hover {

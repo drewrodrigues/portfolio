@@ -10,7 +10,7 @@
   border: 0;
   color: $white;
   font-weight: 700;
-  box-shadow: 0 0 10px 0 $red-primary;
+  box-shadow: 0 0 10px $red-primary;
   transition: background 0.5s;
   cursor: pointer;
   animation: 0.5s glow-red infinite alternate;
@@ -19,4 +19,15 @@
 
 .button:hover {
   background: #c0392b;
+}
+
+.button-disabled {
+  background: $grey-secondary;
+  animation: none;
+  box-shadow: none;
+  cursor: default;
+
+  &:hover {
+    background: $grey-secondary;
+  }
 }

@@ -2,14 +2,40 @@
   padding-bottom: 0;
 }
 
+.project {
+  margin-bottom: 100px;
+}
+
+.project-image {
+  float: left;
+  width: 50%;
+  margin-right: 50px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 5px rgba(0,0,0,0.15);
+}
+
+.project-description {
+  margin-bottom: 25px;
+}
+
+.project-image.in-progress {
+  width: 50%;
+  height: 240px;
+  background: #ccc;
+  text-align: center;
+  padding-top: 90px;
+  font-size: 32px;
+  color: #fff;
+}
+
 .card.project {
   margin-bottom: 50px;
 }
 
 .project-codebase {
-  display: block;
   color: $grey-secondary;
-  margin-top: 20px;
+  display: inline-block;
+  margin-left: 10px;
   font-size: 12px;
   transition: color 0.5s;
 
