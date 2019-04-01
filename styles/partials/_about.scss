@@ -1,16 +1,15 @@
-.about {
-  text-align: center;
-}
-
 .about-image {
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  margin-bottom: 20px;
+  float: left;
+  margin-right: 25px;
+  margin-bottom: 10px;
 }
 
 .about-title {
   color: $grey-primary;
+  line-height: 32px;
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -18,6 +17,39 @@
 
 .about-description {
   color: $grey-secondary;
-  max-width: 400px;
   margin: 0 auto;
+}
+
+.about-attributes {
+  text-align: left;
+}
+
+.about-attribute {
+  font-weight: 700;
+  color: $grey-primary;
+  margin-bottom: 15px;
+
+  span {
+    font-weight: 400;
+    color: $grey-secondary;
+  }
+
+  i {
+    color: $red-primary;
+    display: inline-block;
+    margin-right: 5px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .about-title {
+    text-align: center;
+  }
+  
+  .about-image {
+    float: none;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
 }
