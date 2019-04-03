@@ -347,6 +347,19 @@ nav a {
   margin-right: 25px;
   margin-bottom: 10px; }
 
+.about-contact a {
+  float: none;
+  width: initial;
+  margin-right: 10px;
+  text-align: center;
+  font-size: 12px;
+  color: #aaa; }
+  .about-contact a i {
+    color: #e03c31;
+    font-size: 12px;
+    display: inline-block;
+    margin-right: 5px; }
+
 .about-title {
   color: #3d3d44;
   line-height: 32px;
