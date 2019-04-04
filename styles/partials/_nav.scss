@@ -16,7 +16,8 @@ nav a {
   padding: 10px;
   font-size: 10px;
   font-weight: 700;
-  transition: 0.25s background;
+  transition: 0.5s all;
+  border-bottom: 1px solid $white;
 
   &:hover {
     color: $red-primary;

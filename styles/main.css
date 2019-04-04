@@ -121,9 +121,6 @@ a {
 .projects {
   padding-top: 100px; }
 
-.contact {
-  padding: 100px 0; }
-
 .grey {
   background: #fafbfd; }
 
@@ -226,7 +223,8 @@ nav a {
   padding: 10px;
   font-size: 10px;
   font-weight: 700;
-  transition: 0.25s background; }
+  transition: 0.5s all;
+  border-bottom: 1px solid #fff; }
   nav a:hover {
     color: #e03c31;
     border-bottom: 1px solid #e03c31; }
@@ -353,12 +351,15 @@ nav a {
   margin-right: 10px;
   text-align: center;
   font-size: 12px;
-  color: #aaa; }
+  color: #aaa;
+  transition: 0.5s color; }
   .about-contact a i {
     color: #e03c31;
     font-size: 12px;
     display: inline-block;
     margin-right: 5px; }
+  .about-contact a:hover {
+    color: #e03c31; }
 
 .about-title {
   color: #3d3d44;
@@ -413,24 +414,25 @@ nav a {
   margin-bottom: 10px; }
 
 .contact {
-  border-bottom: 10px solid #e03c31; }
+  border-bottom: 10px solid #e03c31;
+  text-align: center; }
 
 .contact-icon {
-  float: left;
-  width: 20%;
-  text-align: center; }
+  text-align: center;
+  display: inline-block;
+  padding: 10px; }
 
 .contact-icon i {
   animation: fade-in-out 0.5s infinite alternate;
   color: #3d3d44;
-  font-size: 36px;
+  font-size: 16px;
   margin-bottom: 20px;
   transition: all 0.25s; }
 
 .contact-icon h6 {
   color: #aaa;
   font-size: 12px;
-  transition: all 0.25s; }
+  transition: all 0.5s; }
 
 .contact-icon:hover h6,
 .contact-icon:hover i {

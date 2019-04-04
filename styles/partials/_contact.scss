@@ -1,17 +1,18 @@
 .contact {
   border-bottom: 10px solid $red-primary;
+  text-align: center;
 }
 
 .contact-icon {
-  float: left;
-  width: 20%;
   text-align: center;
+  display: inline-block;
+  padding: 10px;
 }
 
 .contact-icon i {
   animation: fade-in-out 0.5s infinite alternate;
   color: $grey-primary;
-  font-size: 36px;
+  font-size: 16px;
   margin-bottom: 20px;
   transition: all 0.25s;
 }
@@ -19,7 +20,7 @@
 .contact-icon h6 {
   color: $grey-secondary;
   font-size: 12px;
-  transition: all 0.25s;
+  transition: all 0.5s;
 }
 
 .contact-icon:hover h6,
