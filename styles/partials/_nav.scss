@@ -19,7 +19,8 @@ nav a {
   transition: 0.5s all;
   border-bottom: 1px solid $white;
 
-  &:hover {
+  &:hover,
+  &.active {
     color: $red-primary;
     border-bottom: 1px solid $red-primary;
   }

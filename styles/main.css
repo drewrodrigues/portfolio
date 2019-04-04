@@ -225,7 +225,7 @@ nav a {
   font-weight: 700;
   transition: 0.5s all;
   border-bottom: 1px solid #fff; }
-  nav a:hover {
+  nav a:hover, nav a.active {
     color: #e03c31;
     border-bottom: 1px solid #e03c31; }
 
