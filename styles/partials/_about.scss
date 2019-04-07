@@ -18,10 +18,12 @@
   float: none;
   width: initial;
   margin-right: 10px;
+  margin-bottom: 10px;
   text-align: center;
   font-size: 12px;
   color: $grey-secondary;
   transition: 0.5s color;
+  padding: 0;
   
   i {
     color: $red-primary;
@@ -45,11 +47,6 @@
 
 .about-description {
   color: $grey-secondary;
-  margin: 0 auto;
-}
-
-.about-attributes {
-  text-align: left;
 }
 
 .about-attribute {
@@ -79,5 +76,15 @@
     display: block;
     margin: 0 auto;
     margin-bottom: 20px;
+  }
+
+  .about-contact {
+    text-align: center;
+  }
+
+  .about-attributes,
+  .about-description {
+    margin: 0 auto;
+    max-width: 400px;
   }
 }

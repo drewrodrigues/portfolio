@@ -1,6 +1,10 @@
 .contact {
-  border-bottom: 10px solid $red-primary;
   text-align: center;
+  background: $red-primary;
+
+  a {
+    color: $white;
+  }
 }
 
 .contact-icon {
@@ -11,19 +15,20 @@
 
 .contact-icon i {
   animation: fade-in-out 0.5s infinite alternate;
-  color: $grey-primary;
-  font-size: 16px;
-  margin-bottom: 20px;
+  font-size: 14px;
+  margin-bottom: 5px;
   transition: all 0.25s;
+  display: inline-block;
+  margin-right: 5px;
 }
 
 .contact-icon h6 {
-  color: $grey-secondary;
   font-size: 12px;
+  display: inline-block;
   transition: all 0.5s;
 }
 
 .contact-icon:hover h6,
 .contact-icon:hover i {
-  color: $red-primary;
+  color: $grey-primary;
 }

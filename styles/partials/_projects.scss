@@ -60,9 +60,15 @@
   .project-image,
   .project-image.in-progress {
     float: none;
-    width: 100%;
-    margin-right: 0;
+    max-width: 400px;
+    margin: 0 auto;
     margin-bottom: 20px;
+  }
+
+  .project-description {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 25px;
   }
 
   .project {

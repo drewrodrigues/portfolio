@@ -349,10 +349,12 @@ nav a {
   float: none;
   width: initial;
   margin-right: 10px;
+  margin-bottom: 10px;
   text-align: center;
   font-size: 12px;
   color: #aaa;
-  transition: 0.5s color; }
+  transition: 0.5s color;
+  padding: 0; }
   .about-contact a i {
     color: #e03c31;
     font-size: 12px;
@@ -369,11 +371,7 @@ nav a {
   margin-bottom: 20px; }
 
 .about-description {
-  color: #aaa;
-  margin: 0 auto; }
-
-.about-attributes {
-  text-align: left; }
+  color: #aaa; }
 
 .about-attribute {
   font-weight: 700;
@@ -395,7 +393,15 @@ nav a {
     float: none;
     display: block;
     margin: 0 auto;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+
+  .about-contact {
+    text-align: center; }
+
+  .about-attributes,
+  .about-description {
+    margin: 0 auto;
+    max-width: 400px; } }
 .skills {
   padding-bottom: 0; }
 
@@ -414,8 +420,10 @@ nav a {
   margin-bottom: 10px; }
 
 .contact {
-  border-bottom: 10px solid #e03c31;
-  text-align: center; }
+  text-align: center;
+  background: #e03c31; }
+  .contact a {
+    color: #fff; }
 
 .contact-icon {
   text-align: center;
@@ -424,19 +432,20 @@ nav a {
 
 .contact-icon i {
   animation: fade-in-out 0.5s infinite alternate;
-  color: #3d3d44;
-  font-size: 16px;
-  margin-bottom: 20px;
-  transition: all 0.25s; }
+  font-size: 14px;
+  margin-bottom: 5px;
+  transition: all 0.25s;
+  display: inline-block;
+  margin-right: 5px; }
 
 .contact-icon h6 {
-  color: #aaa;
   font-size: 12px;
+  display: inline-block;
   transition: all 0.5s; }
 
 .contact-icon:hover h6,
 .contact-icon:hover i {
-  color: #e03c31; }
+  color: #3d3d44; }
 
 .projects {
   padding-bottom: 0; }
@@ -489,9 +498,14 @@ nav a {
   .project-image,
   .project-image.in-progress {
     float: none;
-    width: 100%;
-    margin-right: 0;
+    max-width: 400px;
+    margin: 0 auto;
     margin-bottom: 20px; }
+
+  .project-description {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 25px; }
 
   .project {
     text-align: center; } }
