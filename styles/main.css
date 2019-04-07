@@ -266,14 +266,14 @@ nav a {
   to {
     text-shadow: 0 0 20px #e03c31; } }
 .jumbo {
-  background: url("../images/background-clip.jpg");
-  background-position: bottom;
-  background-repeat: no-repeat; }
+  background: url("../images/jumbo.jpg") no-repeat;
+  background-size: 600px;
+  background-position: 100% 40px; }
 
 .jumbo-content {
   text-align: center;
   padding-top: 10vh;
-  padding-bottom: 100px; }
+  padding-bottom: 50px; }
 
 .jumbo-content-prename {
   position: absolute;
@@ -307,6 +307,10 @@ nav a {
     animation: 0.5s glow-red-text infinite alternate; }
 
 @media all and (max-width: 800px) {
+  .jumbo {
+    background-size: 400px;
+    background-position: 100% 40px; }
+
   .jumbo-content-name {
     font-size: 150px; }
 
@@ -320,7 +324,15 @@ nav a {
 
   .jumbo-content-aftername {
     bottom: 40px; } }
+@media all and (max-width: 1000px) {
+  .jumbo {
+    background-size: 500px;
+    background-position: 100% 40px; } }
 @media all and (max-width: 600px) {
+  .jumbo {
+    background-size: 300px;
+    background-position: 100% 40px; }
+
   .jumbo-content-name {
     font-size: 100px; }
 
@@ -332,7 +344,7 @@ nav a {
     bottom: 15px;
     right: 0; } }
 .about {
-  background-image: url("../images/me.png");
+  background-image: url("../images/me_big.jpg");
   background-repeat: no-repeat;
   background-position: 0% bottom;
   background-size: 25%; }
