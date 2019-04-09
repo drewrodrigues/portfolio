@@ -6,15 +6,31 @@
   margin-bottom: 50px;
   text-align: center;
   font-size: 12px;
+  height: 75px;
 }
 
 .skill-title {
-  color: $grey-primary;
-  font-weight: 700;
+  color: $grey-secondary;
 }
 
 .skill-icon {
   width: 50px;
   display: inline-block;
   margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  background: $white;
+}
+
+@media all and (max-width: 800px) {
+  .skill-md-hide {
+    display: none;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .skill-sm-show {
+    display: initial;
+  }
 }

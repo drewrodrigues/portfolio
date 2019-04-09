@@ -10,15 +10,11 @@
 }
 
 .jumbo-content {
-  text-align: center;
   padding-top: 10vh;
   padding-bottom: 50px;
 }
 
 .jumbo-content-prename {
-  position:absolute;
-  top: 50px;
-  left: 15px;
   font-size: 16px;
   color: $grey-secondary;
   font-weight: 400;
@@ -26,23 +22,20 @@
 }
 
 .jumbo-content-name {
-  position: relative;
   font-size: 200px;
   font-weight: 700;
   color: $grey-primary;
-  display: inline-block;
-  margin-bottom: 50px;
   transition: font-size 0.5s;
+  line-height: 1;
+  margin-left: -15px;
 }
 
 .jumbo-content-aftername {
-  position:absolute;
-  bottom: 50px;
-  right: 8px;
   font-size: 16px;
   color: $grey-secondary;
   font-weight: 400;
   transition: font-size 0.5s;
+  margin-bottom: 50px;
 
   span {
     color: $red-primary;
