@@ -3,15 +3,12 @@
   to { text-shadow: 0 0 20px $red-primary; }
 }
 
-.jumbo {
-  background: url("../images/jumbo.jpg") no-repeat;
-  background-size: 600px;
-  background-position: 100% 40px;
-}
-
 .jumbo-content {
   padding-top: 10vh;
   padding-bottom: 50px;
+  background: url("../images/me_big.jpg") no-repeat;
+  background-size: 400px;
+  background-position: 100% bottom;
 }
 
 .jumbo-content-prename {
@@ -45,45 +42,30 @@
 }
 
 @media all and (max-width: 800px) {
-  .jumbo {
-    background-size: 400px;
-    background-position: 100% 40px;
+  .jumbo-content {
+    background-size: 350px;
   }
-  
+
   .jumbo-content-name {
     font-size: 150px;
+    margin-left: -10px;
   }
 
   .jumbo-content-prename,
   .jumbo-content-aftername {
     font-size: 14px;
   }
-
-  .jumbo-content-prename {
-    top: 40px;
-    left: 10px;
-  }
-
-  .jumbo-content-aftername {
-    bottom: 40px;
-  }
-}
-
-@media all and (max-width: 1000px) {
-  .jumbo {
-    background-size: 500px;
-    background-position: 100% 40px;
-  }
 }
 
 @media all and (max-width: 600px) {
-  .jumbo {
+  .jumbo-content {
     background-size: 300px;
-    background-position: 100% 40px;
+    background-position: 125% bottom;
   }
   
   .jumbo-content-name {
     font-size: 100px;
+    margin-left: -7px;
   }
 
   .jumbo-content-prename {
