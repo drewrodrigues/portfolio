@@ -336,8 +336,14 @@ nav a {
     right: 0; } }
 @media all and (max-width: 500px) {
   .jumbo-content {
-    background-size: 250px;
-    background-position: 100% bottom; } }
+    background: none;
+    text-align: center; }
+
+  .jumbo-content-prename {
+    margin-bottom: -10px; }
+
+  .jumbo-content-name {
+    font-size: 125px; } }
 .about-image {
   border-radius: 50%;
   width: 100px;
@@ -517,6 +523,11 @@ nav a {
     max-width: 400px;
     margin: 0 auto;
     margin-bottom: 25px; }
+
+  .project-image.in-progress {
+    height: 120px;
+    font-size: 16px;
+    padding-top: 50px; }
 
   .project {
     text-align: center; } }
