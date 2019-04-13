@@ -445,15 +445,14 @@ nav a {
 .contact-icon {
   text-align: center;
   display: inline-block;
-  padding: 10px; }
+  padding: 10px 5px; }
 
 .contact-icon i {
   animation: fade-in-out 0.5s infinite alternate;
   font-size: 14px;
   margin-bottom: 5px;
   transition: all 0.25s;
-  display: inline-block;
-  margin-right: 5px; }
+  display: inline-block; }
 
 .contact-icon h6 {
   font-size: 12px;
