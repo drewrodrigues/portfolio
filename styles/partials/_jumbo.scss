@@ -9,6 +9,7 @@
   background: url("../images/me_big.jpg") no-repeat;
   background-size: 400px;
   background-position: 100% bottom;
+  transition: background-size 0.5s;
 }
 
 .jumbo-content-prename {
@@ -60,7 +61,6 @@
 @media all and (max-width: 600px) {
   .jumbo-content {
     background-size: 300px;
-    background-position: 125% bottom;
   }
   
   .jumbo-content-name {
@@ -76,5 +76,12 @@
   .jumbo-content-aftername {
     bottom: 15px;
     right: 0;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .jumbo-content {
+    background-size: 250px;
+    background-position: 100% bottom;
   }
 }
