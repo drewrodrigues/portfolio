@@ -337,7 +337,8 @@ nav a {
 @media all and (max-width: 500px) {
   .jumbo-content {
     background: none;
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 0; }
 
   .jumbo-content-prename {
     margin-bottom: -10px; }
