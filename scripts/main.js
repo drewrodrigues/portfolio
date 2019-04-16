@@ -33,6 +33,7 @@ const Animations = {
     })
   },
   navbarHighlight: () => {
+    const navbar = document.querySelector('.nav-container')
     const navLinks = document.querySelectorAll('.highlightable')
     const sections = {
       ".projects": null,
@@ -49,6 +50,17 @@ const Animations = {
         sections[sectionClass] = section.offsetTop
       })
 
+      // add navbar scroll class if not at top
+      if (scrollTop !== 0) {
+        if (!navbar.classList.contains('scroll')) {
+          navbar.classList.add('scroll')
+        }
+      } else {
+        if (navbar.classList.contains('scroll')) {
+          navbar.classList.remove('scroll')
+        }
+      }
+
       // check which section window is in and apply active to nav link
       if (scrollTop >= sections[".projects"]) {
         navLinks.forEach(link => link.classList.remove('active'))
@@ -63,7 +75,7 @@ const Animations = {
         navLinks.forEach(link => link.classList.remove('active'))
       }
     })
-  }
+  },
 }
 
 document.addEventListener('DOMContentLoaded', () => {

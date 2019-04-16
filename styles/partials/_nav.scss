@@ -8,6 +8,11 @@ nav li {
   z-index: 100;
   width: 100%;
   background: $white;
+  transition: box-shadow 1s;
+}
+
+.nav-container.scroll {
+  box-shadow: 0 0 10px #ccc;
 }
 
 nav a {

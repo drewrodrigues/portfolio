@@ -225,7 +225,11 @@ nav li {
   position: fixed;
   z-index: 100;
   width: 100%;
-  background: #fff; }
+  background: #fff;
+  transition: box-shadow 1s; }
+
+.nav-container.scroll {
+  box-shadow: 0 0 10px #ccc; }
 
 nav a {
   color: #3d3d44;
@@ -474,7 +478,8 @@ nav a {
   float: left;
   width: 50%;
   margin-right: 50px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  box-shadow: 0 0 10px 5px #ccc; }
 
 .project-description {
   margin-bottom: 25px; }
