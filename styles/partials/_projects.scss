@@ -8,7 +8,7 @@
 
 .project-image {
   float: left;
-  width: 50%;
+  width: 66.6666%;
   margin-right: 50px;
   border-radius: 5px;
   box-shadow: 0 0 10px 5px #ccc;
@@ -35,7 +35,6 @@
 .project-codebase {
   color: $grey-secondary;
   display: inline-block;
-  margin-left: 10px;
   font-size: 12px;
   transition: color 0.5s;
 
@@ -45,7 +44,7 @@
 }
 
 .project-technologies {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .project-technology {
@@ -55,13 +54,14 @@
   border-radius: 3px;
   border: 1px solid $red-primary;
   color: $red-primary;
+  margin-bottom: 3px;
 }
 
 @media all and (max-width: 800px) {
   .project-image,
   .project-image.in-progress {
     float: none;
-    max-width: 400px;
+    width: 80%;
     margin: 0 auto;
     margin-bottom: 20px;
   }

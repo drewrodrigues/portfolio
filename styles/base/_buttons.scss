@@ -15,19 +15,20 @@
   cursor: pointer;
   animation: 0.5s glow-red infinite alternate;
   font-size: 12px;
+  margin-right: 10px;
 }
 
 .button:hover {
   background: #c0392b;
 }
 
-.button-disabled {
+.button-gray {
   background: $grey-secondary;
   animation: none;
   box-shadow: none;
-  cursor: default;
+  cursor: pointer;
 
   &:hover {
-    background: $grey-secondary;
+    background: $grey-primary;
   }
 }
