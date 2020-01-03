@@ -1,15 +1,15 @@
 'use strict';
 
-var gulp        = require('gulp'),
-    sass        = require('gulp-sass'),
+var gulp         = require('gulp'),
+    sass         = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
-    browserSync = require('browser-sync').create();
+    browserSync  = require('browser-sync').create();
 
 sass.compiler = require('node-sass');
 
 gulp.task('sass', function () {
   return gulp.src('./styles/main.scss')
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(gulp.dest('./styles/'))
     .pipe(autoprefixer({cascade: false}))
     .pipe(browserSync.stream());
