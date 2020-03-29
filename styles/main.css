@@ -283,7 +283,7 @@ nav a {
 .jumbo-content {
   padding-top: 10vh;
   padding-bottom: 50px;
-  background: url("../images/me_big.jpg") no-repeat;
+  background: url("../images/me_big.png") no-repeat;
   background-size: 400px;
   background-position: 100% bottom;
   transition: background-size 0.5s; }
